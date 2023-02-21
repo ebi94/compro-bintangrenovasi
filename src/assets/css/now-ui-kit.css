@@ -3480,7 +3480,7 @@ p {
 .card-description,
 .footer-big p {
   color: #9a9a9a;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .category {
@@ -4436,7 +4436,7 @@ Created using IcoMoon - icomoon.io
 }
 .navbar .navbar-brand {
   text-transform: uppercase;
-  font-size: 0.8571em;
+  font-size: 1.2em;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   line-height: 1.625rem;
@@ -7812,7 +7812,7 @@ td.rdtYear:hover {
 
 .dropdown-menu a.dropdown-header[tabindex="-1"] {
   color: rgba(181, 181, 181, 0.6);
-  font-size: 0.7142em;
+  font-size: 1em;
   text-transform: uppercase;
   font-weight: 700;
 }

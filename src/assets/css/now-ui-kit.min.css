@@ -3141,7 +3141,7 @@ p {
 .card-description,
 .footer-big p {
   color: #9a9a9a;
-  font-weight: 300;
+  font-weight: 400;
 }
 .category {
   text-transform: capitalize;
@@ -3918,7 +3918,7 @@ body {
 }
 .navbar .navbar-brand {
   text-transform: uppercase;
-  font-size: 0.8571em;
+  font-size: 1.2em;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   line-height: 1.625rem;
@@ -4084,7 +4084,7 @@ body {
 }
 .dropdown-menu .dropdown-header:not([href]):not([tabindex]) {
   color: rgba(182, 182, 182, 0.6);
-  font-size: 0.7142em;
+  font-size: 1em;
   text-transform: uppercase;
   font-weight: 700;
 }

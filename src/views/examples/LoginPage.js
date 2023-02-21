@@ -1,37 +1,36 @@
-import React from "react";
-
+/* eslint-disable react/no-unknown-property */
+import TransparentFooter from 'components/Footers/TransparentFooter.js';
+// core components
+import ExamplesNavbar from 'components/Navbars/ExamplesNavbar.js';
+import React from 'react';
 // reactstrap components
 import {
   Button,
   Card,
-  CardHeader,
   CardBody,
   CardFooter,
+  CardHeader,
+  Col,
+  Container,
   Form,
   Input,
-  InputGroupAddon,
-  InputGroupText,
   InputGroup,
-  Container,
-  Col
-} from "reactstrap";
-
-// core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import TransparentFooter from "components/Footers/TransparentFooter.js";
+  InputGroupAddon,
+  InputGroupText
+} from 'reactstrap';
 
 function LoginPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
-    document.body.classList.add("login-page");
-    document.body.classList.add("sidebar-collapse");
-    document.documentElement.classList.remove("nav-open");
+    document.body.classList.add('login-page');
+    document.body.classList.add('sidebar-collapse');
+    document.documentElement.classList.remove('nav-open');
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     return function cleanup() {
-      document.body.classList.remove("login-page");
-      document.body.classList.remove("sidebar-collapse");
+      document.body.classList.remove('login-page');
+      document.body.classList.remove('sidebar-collapse');
     };
   }, []);
   return (
@@ -41,9 +40,8 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
-          }}
-        ></div>
+            backgroundImage: 'url(' + require('assets/img/login.jpg') + ')'
+          }}></div>
         <div className="content">
           <Container>
             <Col className="ml-auto mr-auto" md="4">
@@ -51,19 +49,12 @@ function LoginPage() {
                 <Form action="" className="form" method="">
                   <CardHeader className="text-center">
                     <div className="logo-container">
-                      <img
-                        alt="..."
-                        src={require("assets/img/now-logo.png")}
-                      ></img>
+                      <img alt="..." src={require('assets/img/now-logo.png')}></img>
                     </div>
                   </CardHeader>
                   <CardBody>
                     <InputGroup
-                      className={
-                        "no-border input-lg" +
-                        (firstFocus ? " input-group-focus" : "")
-                      }
-                    >
+                      className={'no-border input-lg' + (firstFocus ? ' input-group-focus' : '')}>
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
                           <i className="now-ui-icons users_circle-08"></i>
@@ -73,15 +64,10 @@ function LoginPage() {
                         placeholder="First Name..."
                         type="text"
                         onFocus={() => setFirstFocus(true)}
-                        onBlur={() => setFirstFocus(false)}
-                      ></Input>
+                        onBlur={() => setFirstFocus(false)}></Input>
                     </InputGroup>
                     <InputGroup
-                      className={
-                        "no-border input-lg" +
-                        (lastFocus ? " input-group-focus" : "")
-                      }
-                    >
+                      className={'no-border input-lg' + (lastFocus ? ' input-group-focus' : '')}>
                       <InputGroupAddon addonType="prepend">
                         <InputGroupText>
                           <i className="now-ui-icons text_caps-small"></i>
@@ -91,8 +77,7 @@ function LoginPage() {
                         placeholder="Last Name..."
                         type="text"
                         onFocus={() => setLastFocus(true)}
-                        onBlur={() => setLastFocus(false)}
-                      ></Input>
+                        onBlur={() => setLastFocus(false)}></Input>
                     </InputGroup>
                   </CardBody>
                   <CardFooter className="text-center">
@@ -102,28 +87,19 @@ function LoginPage() {
                       color="info"
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
-                      size="lg"
-                    >
+                      size="lg">
                       Get Started
                     </Button>
                     <div className="pull-left">
                       <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
+                        <a className="link" href="#pablo" onClick={(e) => e.preventDefault()}>
                           Create Account
                         </a>
                       </h6>
                     </div>
                     <div className="pull-right">
                       <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
+                        <a className="link" href="#pablo" onClick={(e) => e.preventDefault()}>
                           Need Help?
                         </a>
                       </h6>

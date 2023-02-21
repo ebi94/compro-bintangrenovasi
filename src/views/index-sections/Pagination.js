@@ -1,24 +1,23 @@
-import React from "react";
-
+import React from 'react';
 // reactstrap components
 import {
   Badge,
+  Col,
+  Container,
+  Nav,
   NavItem,
   NavLink,
-  Nav,
   Pagination,
   PaginationItem,
   PaginationLink,
   Progress,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+  Row
+} from 'reactstrap';
 
 // core components
 
 function PaginationSection() {
-  const [pills, setPills] = React.useState("2");
+  const [pills, setPills] = React.useState('2');
   return (
     <>
       <div className="section section-pagination">
@@ -40,44 +39,37 @@ function PaginationSection() {
               </div>
               <br></br>
               <h4>Navigation Pills</h4>
-              <Nav
-                className="nav-pills-info nav-pills-just-icons"
-                pills
-                role="tablist"
-              >
+              <Nav className="nav-pills-info nav-pills-just-icons" pills role="tablist">
                 <NavItem>
                   <NavLink
-                    className={pills === "1" ? "active" : ""}
+                    className={pills === '1' ? 'active' : ''}
                     href="#pablo"
                     onClick={(e) => {
                       e.preventDefault();
-                      setPills("1");
-                    }}
-                  >
+                      setPills('1');
+                    }}>
                     <i className="far fa-gem"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={pills === "2" ? "active" : ""}
+                    className={pills === '2' ? 'active' : ''}
                     href="#pablo"
                     onClick={(e) => {
                       e.preventDefault();
-                      setPills("2");
-                    }}
-                  >
+                      setPills('2');
+                    }}>
                     <i className="fa fa-thermometer-full"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={pills === "3" ? "active" : ""}
+                    className={pills === '3' ? 'active' : ''}
                     href="#pablo"
                     onClick={(e) => {
                       e.preventDefault();
-                      setPills("3");
-                    }}
-                  >
+                      setPills('3');
+                    }}>
                     <i className="fa fa-suitcase"></i>
                   </NavLink>
                 </NavItem>
@@ -90,47 +82,29 @@ function PaginationSection() {
             </Col>
             <Col sm="6">
               <h4>Pagination</h4>
-              <Pagination
-                className="pagination pagination-info"
-                listClassName="pagination-info"
-              >
+              <Pagination className="pagination pagination-info" listClassName="pagination-info">
                 <PaginationItem className="active">
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     1
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     2
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     3
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     4
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     5
                   </PaginationLink>
                 </PaginationItem>
@@ -140,37 +114,24 @@ function PaginationSection() {
                   <PaginationLink
                     aria-label="Previous"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                    onClick={(e) => e.preventDefault()}>
                     <span aria-hidden={true}>
-                      <i
-                        aria-hidden={true}
-                        className="fa fa-angle-double-left"
-                      ></i>
+                      <i aria-hidden={true} className="fa fa-angle-double-left"></i>
                     </span>
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     1
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem className="active">
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     2
                   </PaginationLink>
                 </PaginationItem>
                 <PaginationItem>
-                  <PaginationLink
-                    href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                  <PaginationLink href="#pablo" onClick={(e) => e.preventDefault()}>
                     3
                   </PaginationLink>
                 </PaginationItem>
@@ -178,13 +139,9 @@ function PaginationSection() {
                   <PaginationLink
                     aria-label="Next"
                     href="#pablo"
-                    onClick={(e) => e.preventDefault()}
-                  >
+                    onClick={(e) => e.preventDefault()}>
                     <span aria-hidden={true}>
-                      <i
-                        aria-hidden={true}
-                        className="fa fa-angle-double-right"
-                      ></i>
+                      <i aria-hidden={true} className="fa fa-angle-double-right"></i>
                     </span>
                   </PaginationLink>
                 </PaginationItem>
