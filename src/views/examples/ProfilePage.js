@@ -1,35 +1,33 @@
-import React from "react";
-
+import DefaultFooter from 'components/Footers/DefaultFooter.js';
+import ProfilePageHeader from 'components/Headers/ProfilePageHeader.js';
+// core components
+import ExamplesNavbar from 'components/Navbars/ExamplesNavbar.js';
+import React from 'react';
 // reactstrap components
 import {
   Button,
+  Col,
+  Container,
+  Nav,
   NavItem,
   NavLink,
-  Nav,
+  Row,
   TabContent,
   TabPane,
-  Container,
-  Row,
-  Col,
   UncontrolledTooltip
-} from "reactstrap";
-
-// core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+} from 'reactstrap';
 
 function ProfilePage() {
-  const [pills, setPills] = React.useState("2");
+  const [pills, setPills] = React.useState('2');
   React.useEffect(() => {
-    document.body.classList.add("profile-page");
-    document.body.classList.add("sidebar-collapse");
-    document.documentElement.classList.remove("nav-open");
+    document.body.classList.add('profile-page');
+    document.body.classList.add('sidebar-collapse');
+    document.documentElement.classList.remove('nav-open');
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     return function cleanup() {
-      document.body.classList.remove("profile-page");
-      document.body.classList.remove("sidebar-collapse");
+      document.body.classList.remove('profile-page');
+      document.body.classList.remove('sidebar-collapse');
     };
   }, []);
   return (
@@ -47,8 +45,7 @@ function ProfilePage() {
                 className="btn-round btn-icon"
                 color="default"
                 id="tooltip515203352"
-                size="lg"
-              >
+                size="lg">
                 <i className="fab fa-twitter"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip515203352">
@@ -58,8 +55,7 @@ function ProfilePage() {
                 className="btn-round btn-icon"
                 color="default"
                 id="tooltip340339231"
-                size="lg"
-              >
+                size="lg">
                 <i className="fab fa-instagram"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip340339231">
@@ -68,60 +64,53 @@ function ProfilePage() {
             </div>
             <h3 className="title">About me</h3>
             <h5 className="description">
-              An artist of considerable range, Ryan — the name taken by
-              Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-              and records all of his own music, giving it a warm, intimate feel
-              with a solid groove structure. An artist of considerable range.
+              An artist of considerable range, Ryan — the name taken by Melbourne-raised,
+              Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving
+              it a warm, intimate feel with a solid groove structure. An artist of considerable
+              range.
             </h5>
             <Row>
               <Col className="ml-auto mr-auto" md="6">
                 <h4 className="title text-center">My Portfolio</h4>
                 <div className="nav-align-center">
-                  <Nav
-                    className="nav-pills-info nav-pills-just-icons"
-                    pills
-                    role="tablist"
-                  >
+                  <Nav className="nav-pills-info nav-pills-just-icons" pills role="tablist">
                     <NavItem>
                       <NavLink
-                        className={pills === "1" ? "active" : ""}
+                        className={pills === '1' ? 'active' : ''}
                         href="#pablo"
                         onClick={(e) => {
                           e.preventDefault();
-                          setPills("1");
-                        }}
-                      >
+                          setPills('1');
+                        }}>
                         <i className="now-ui-icons design_image"></i>
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        className={pills === "2" ? "active" : ""}
+                        className={pills === '2' ? 'active' : ''}
                         href="#pablo"
                         onClick={(e) => {
                           e.preventDefault();
-                          setPills("2");
-                        }}
-                      >
+                          setPills('2');
+                        }}>
                         <i className="now-ui-icons location_world"></i>
                       </NavLink>
                     </NavItem>
                     <NavItem>
                       <NavLink
-                        className={pills === "3" ? "active" : ""}
+                        className={pills === '3' ? 'active' : ''}
                         href="#pablo"
                         onClick={(e) => {
                           e.preventDefault();
-                          setPills("3");
-                        }}
-                      >
+                          setPills('3');
+                        }}>
                         <i className="now-ui-icons sport_user-run"></i>
                       </NavLink>
                     </NavItem>
                   </Nav>
                 </div>
               </Col>
-              <TabContent className="gallery" activeTab={"pills" + pills}>
+              <TabContent className="gallery" activeTab={'pills' + pills}>
                 <TabPane tabId="pills1">
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
@@ -129,25 +118,21 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg1.jpg")}
-                        ></img>
+                          src={require('assets/img/bg1.jpg')}></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
-                        ></img>
+                          src={require('assets/img/bg3.jpg')}></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
+                          src={require('assets/img/bg8.jpg')}></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
+                          src={require('assets/img/bg7.jpg')}></img>
                       </Col>
                     </Row>
                   </Col>
@@ -159,25 +144,21 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
-                        ></img>
+                          src={require('assets/img/bg6.jpg')}></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg11.jpg")}
-                        ></img>
+                          src={require('assets/img/bg11.jpg')}></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
+                          src={require('assets/img/bg7.jpg')}></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
+                          src={require('assets/img/bg8.jpg')}></img>
                       </Col>
                     </Row>
                   </Col>
@@ -189,25 +170,21 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
-                        ></img>
+                          src={require('assets/img/bg3.jpg')}></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
+                          src={require('assets/img/bg8.jpg')}></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
+                          src={require('assets/img/bg7.jpg')}></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg")}
-                        ></img>
+                          src={require('assets/img/bg6.jpg')}></img>
                       </Col>
                     </Row>
                   </Col>

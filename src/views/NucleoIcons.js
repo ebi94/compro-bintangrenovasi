@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 function NucleoIcons() {
   const [open, setOpen] = React.useState(false);
   React.useEffect(() => {
-    document.documentElement.classList.add("nucleo-icons-page-styles");
+    document.documentElement.classList.add('nucleo-icons-page-styles');
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
     return function cleanup() {
-      document.documentElement.classList.remove("nucleo-icons-page-styles");
+      document.documentElement.classList.remove('nucleo-icons-page-styles');
     };
   }, []);
   return (
@@ -20,27 +20,25 @@ function NucleoIcons() {
       </header>
       <div id="cd-nav">
         <a
-          className={"cd-nav-trigger" + (open ? " menu-is-open" : "")}
+          className={'cd-nav-trigger' + (open ? ' menu-is-open' : '')}
           href="#pablo"
           id="cd-nav-trigger"
           onClick={(e) => {
             e.preventDefault();
             setOpen(!open);
-          }}
-        >
+          }}>
           Menu <span></span>
         </a>
         <nav>
-          <ul id="cd-main-nav" className={open ? "is-visible" : ""}>
+          <ul id="cd-main-nav" className={open ? 'is-visible' : ''}>
             <li>
               <a
                 href="#pablo"
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("arrows").scrollIntoView();
-                }}
-              >
+                  document.getElementById('arrows').scrollIntoView();
+                }}>
                 Arrows
               </a>
             </li>
@@ -50,9 +48,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("business").scrollIntoView();
-                }}
-              >
+                  document.getElementById('business').scrollIntoView();
+                }}>
                 Business &amp; Finance
               </a>
             </li>
@@ -62,9 +59,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("clothes").scrollIntoView();
-                }}
-              >
+                  document.getElementById('clothes').scrollIntoView();
+                }}>
                 Clothes &amp; Accessories
               </a>
             </li>
@@ -74,9 +70,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("design").scrollIntoView();
-                }}
-              >
+                  document.getElementById('design').scrollIntoView();
+                }}>
                 Design &amp; Development
               </a>
             </li>
@@ -86,9 +81,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("emoticons").scrollIntoView();
-                }}
-              >
+                  document.getElementById('emoticons').scrollIntoView();
+                }}>
                 Emoticons
               </a>
             </li>
@@ -98,9 +92,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("files").scrollIntoView();
-                }}
-              >
+                  document.getElementById('files').scrollIntoView();
+                }}>
                 Files &amp; Folders
               </a>
             </li>
@@ -110,9 +103,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("medical").scrollIntoView();
-                }}
-              >
+                  document.getElementById('medical').scrollIntoView();
+                }}>
                 Healthcare &amp; Medical
               </a>
             </li>
@@ -122,9 +114,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("loaders").scrollIntoView();
-                }}
-              >
+                  document.getElementById('loaders').scrollIntoView();
+                }}>
                 Loaders
               </a>
             </li>
@@ -134,9 +125,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("maps").scrollIntoView();
-                }}
-              >
+                  document.getElementById('maps').scrollIntoView();
+                }}>
                 Maps &amp; Location
               </a>
             </li>
@@ -146,9 +136,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("media").scrollIntoView();
-                }}
-              >
+                  document.getElementById('media').scrollIntoView();
+                }}>
                 Media
               </a>
             </li>
@@ -158,9 +147,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("objects").scrollIntoView();
-                }}
-              >
+                  document.getElementById('objects').scrollIntoView();
+                }}>
                 Objects
               </a>
             </li>
@@ -170,9 +158,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("school").scrollIntoView();
-                }}
-              >
+                  document.getElementById('school').scrollIntoView();
+                }}>
                 School &amp; Education
               </a>
             </li>
@@ -182,9 +169,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("shopping").scrollIntoView();
-                }}
-              >
+                  document.getElementById('shopping').scrollIntoView();
+                }}>
                 Shopping
               </a>
             </li>
@@ -194,9 +180,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("sport").scrollIntoView();
-                }}
-              >
+                  document.getElementById('sport').scrollIntoView();
+                }}>
                 Sport
               </a>
             </li>
@@ -206,9 +191,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("technology").scrollIntoView();
-                }}
-              >
+                  document.getElementById('technology').scrollIntoView();
+                }}>
                 Technology
               </a>
             </li>
@@ -218,9 +202,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("text").scrollIntoView();
-                }}
-              >
+                  document.getElementById('text').scrollIntoView();
+                }}>
                 Text Editing
               </a>
             </li>
@@ -230,9 +213,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("gestures").scrollIntoView();
-                }}
-              >
+                  document.getElementById('gestures').scrollIntoView();
+                }}>
                 Touch Gestures
               </a>
             </li>
@@ -242,9 +224,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("transportation").scrollIntoView();
-                }}
-              >
+                  document.getElementById('transportation').scrollIntoView();
+                }}>
                 Transportation
               </a>
             </li>
@@ -254,9 +235,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("travel").scrollIntoView();
-                }}
-              >
+                  document.getElementById('travel').scrollIntoView();
+                }}>
                 Travel
               </a>
             </li>
@@ -266,9 +246,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("interface").scrollIntoView();
-                }}
-              >
+                  document.getElementById('interface').scrollIntoView();
+                }}>
                 User Interface
               </a>
             </li>
@@ -278,9 +257,8 @@ function NucleoIcons() {
                 onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
-                  document.getElementById("users").scrollIntoView();
-                }}
-              >
+                  document.getElementById('users').scrollIntoView();
+                }}>
                 Users
               </a>
             </li>

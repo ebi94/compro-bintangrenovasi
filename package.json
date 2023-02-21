@@ -16,11 +16,22 @@
     "reactstrap": "8.9.0",
     "sass": "1.54.0"
   },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "prettier": "^2.2.1"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "fixlint": "eslint --fix ./src",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.css",
     "minify-sass": "sass src/assets/scss/now-ui-kit.scss src/assets/css/now-ui-kit.min.css --style compressed"

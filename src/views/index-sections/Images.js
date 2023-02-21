@@ -1,7 +1,6 @@
-import React from "react";
-
+import React from 'react';
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Col, Container, Row } from 'reactstrap';
 
 // core components
 
@@ -15,20 +14,8 @@ function Images() {
               <div className="hero-images-container">
                 <img
                   alt="..."
-                  src={require("assets/img/hero-image-1.png")}
-                ></img>
-              </div>
-              <div className="hero-images-container-1">
-                <img
-                  alt="..."
-                  src={require("assets/img/hero-image-2.png")}
-                ></img>
-              </div>
-              <div className="hero-images-container-2">
-                <img
-                  alt="..."
-                  src={require("assets/img/hero-image-3.png")}
-                ></img>
+                  style={{ borderRadius: 5 }}
+                  src={require('assets/img/house-design-hd.png')}></img>
               </div>
             </Col>
           </Row>

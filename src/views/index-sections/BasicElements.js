@@ -1,22 +1,21 @@
-import React from "react";
-// react plugin used to create switch buttons
-import Switch from "react-bootstrap-switch";
 // plugin that creates slider
-import Slider from "nouislider";
-
+import Slider from 'nouislider';
+import React from 'react';
+// react plugin used to create switch buttons
+import Switch from 'react-bootstrap-switch';
 // reactstrap components
 import {
   Button,
-  Label,
+  Col,
+  Container,
   FormGroup,
   Input,
+  InputGroup,
   InputGroupAddon,
   InputGroupText,
-  InputGroup,
-  Container,
-  Row,
-  Col,
-} from "reactstrap";
+  Label,
+  Row
+} from 'reactstrap';
 
 // core components
 
@@ -24,26 +23,20 @@ function BasicElements() {
   const [leftFocus, setLeftFocus] = React.useState(false);
   const [rightFocus, setRightFocus] = React.useState(false);
   React.useEffect(() => {
-    if (
-      !document
-        .getElementById("sliderRegular")
-        .classList.contains("noUi-target")
-    ) {
-      Slider.create(document.getElementById("sliderRegular"), {
+    if (!document.getElementById('sliderRegular').classList.contains('noUi-target')) {
+      Slider.create(document.getElementById('sliderRegular'), {
         start: [50],
         connect: [true, false],
         step: 0.5,
-        range: { min: 0, max: 100 },
+        range: { min: 0, max: 100 }
       });
     }
-    if (
-      !document.getElementById("sliderDouble").classList.contains("noUi-target")
-    ) {
-      Slider.create(document.getElementById("sliderDouble"), {
+    if (!document.getElementById('sliderDouble').classList.contains('noUi-target')) {
+      Slider.create(document.getElementById('sliderDouble'), {
         start: [20, 80],
         connect: [false, true, false],
         step: 1,
-        range: { min: 0, max: 100 },
+        range: { min: 0, max: 100 }
       });
     }
   });
@@ -128,11 +121,7 @@ function BasicElements() {
             <Row>
               <Col lg="3" sm="6">
                 <FormGroup>
-                  <Input
-                    defaultValue=""
-                    placeholder="Regular"
-                    type="text"
-                  ></Input>
+                  <Input defaultValue="" placeholder="Regular" type="text"></Input>
                 </FormGroup>
               </Col>
               <Col lg="3" sm="6">
@@ -140,8 +129,7 @@ function BasicElements() {
                   <Input
                     className="form-control-success"
                     defaultValue="Success"
-                    type="text"
-                  ></Input>
+                    type="text"></Input>
                 </FormGroup>
               </Col>
               <Col lg="3" sm="6">
@@ -149,12 +137,11 @@ function BasicElements() {
                   <Input
                     className="form-control-danger"
                     defaultValue="Error Input"
-                    type="email"
-                  ></Input>
+                    type="email"></Input>
                 </FormGroup>
               </Col>
               <Col lg="3" sm="6">
-                <InputGroup className={leftFocus ? "input-group-focus" : ""}>
+                <InputGroup className={leftFocus ? 'input-group-focus' : ''}>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
                       <i className="fa fa-user-circle"></i>
@@ -164,18 +151,16 @@ function BasicElements() {
                     placeholder="Left Font Awesome Icon"
                     type="text"
                     onFocus={() => setLeftFocus(true)}
-                    onBlur={() => setLeftFocus(false)}
-                  ></Input>
+                    onBlur={() => setLeftFocus(false)}></Input>
                 </InputGroup>
               </Col>
               <Col lg="3" sm="6">
-                <InputGroup className={rightFocus ? "input-group-focus" : ""}>
+                <InputGroup className={rightFocus ? 'input-group-focus' : ''}>
                   <Input
                     placeholder="Right Nucleo Icon"
                     type="text"
                     onFocus={() => setRightFocus(true)}
-                    onBlur={() => setRightFocus(false)}
-                  ></Input>
+                    onBlur={() => setRightFocus(false)}></Input>
                   <InputGroupAddon addonType="append">
                     <InputGroupText>
                       <i className="now-ui-icons users_single-02"></i>
@@ -226,8 +211,7 @@ function BasicElements() {
                     defaultValue="option1"
                     id="exampleRadios1"
                     name="exampleRadios"
-                    type="radio"
-                  ></Input>
+                    type="radio"></Input>
                   <span className="form-check-sign"></span>
                   Radio is off
                 </Label>
@@ -239,8 +223,7 @@ function BasicElements() {
                     defaultValue="option2"
                     id="exampleRadios1"
                     name="exampleRadios"
-                    type="radio"
-                  ></Input>
+                    type="radio"></Input>
                   <span className="form-check-sign"></span>
                   Radio is on
                 </Label>
@@ -252,8 +235,7 @@ function BasicElements() {
                     disabled
                     id="exampleRadios2"
                     name="exampleRadios1"
-                    type="radio"
-                  ></Input>
+                    type="radio"></Input>
                   <span className="form-check-sign"></span>
                   Disabled radio is off
                 </Label>
@@ -266,8 +248,7 @@ function BasicElements() {
                     disabled
                     id="exampleRadios2"
                     name="exampleRadios1"
-                    type="radio"
-                  ></Input>
+                    type="radio"></Input>
                   <span className="form-check-sign"></span>
                   Disabled radio is on
                 </Label>

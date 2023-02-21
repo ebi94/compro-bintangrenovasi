@@ -1,7 +1,6 @@
-import React from "react";
-
+import React from 'react';
 // reactstrap components
-import { Button, Container } from "reactstrap";
+import { Button, Container } from 'reactstrap';
 
 // core components
 
@@ -12,12 +11,11 @@ function LandingPageHeader() {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
-          "translate3d(0," + windowScrollTop + "px,0)";
+        pageHeader.current.style.transform = 'translate3d(0,' + windowScrollTop + 'px,0)';
       };
-      window.addEventListener("scroll", updateScroll);
+      window.addEventListener('scroll', updateScroll);
       return function cleanup() {
-        window.removeEventListener("scroll", updateScroll);
+        window.removeEventListener('scroll', updateScroll);
       };
     }
   });
@@ -27,10 +25,9 @@ function LandingPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg6.jpg") + ")"
+            backgroundImage: 'url(' + require('assets/img/bg6.jpg') + ')'
           }}
-          ref={pageHeader}
-        ></div>
+          ref={pageHeader}></div>
         <div className="content-center">
           <Container>
             <h1 className="title">This is our great company.</h1>
@@ -39,24 +36,21 @@ function LandingPageHeader() {
                 className="btn-icon btn-round"
                 color="info"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
+                onClick={(e) => e.preventDefault()}>
                 <i className="fab fa-facebook-square"></i>
               </Button>
               <Button
                 className="btn-icon btn-round"
                 color="info"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
+                onClick={(e) => e.preventDefault()}>
                 <i className="fab fa-twitter"></i>
               </Button>
               <Button
                 className="btn-icon btn-round"
                 color="info"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
+                onClick={(e) => e.preventDefault()}>
                 <i className="fab fa-google-plus"></i>
               </Button>
             </div>
