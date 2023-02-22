@@ -20,6 +20,7 @@ root.render(
   <BrowserRouter>
     <Switch>
       <Switch>
+        <Route path="/" render={(props) => <Index {...props} />} />
         <Route path="/index" render={(props) => <Index {...props} />} />
         <Route path="/nucleo-icons" render={(props) => <NucleoIcons {...props} />} />
         <Route path="/landing-page" render={(props) => <LandingPage {...props} />} />
@@ -27,7 +28,7 @@ root.render(
         <Route path="/login-page" render={(props) => <LoginPage {...props} />} />
         <Route path="/template-page" render={(props) => <TemplatePage {...props} />} />
         <Redirect to="/" />
-        <Redirect from="/" to="/" />
+        <Redirect from="/index" to="/" />
       </Switch>
     </Switch>
   </BrowserRouter>
