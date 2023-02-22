@@ -85,10 +85,10 @@ function ExamplesNavbar() {
               href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
               target="_blank"
               id="navbar-brand">
-              Now Ui Kit
+              PT Indonesia Tekhnosindo Semesta | Bintang Renovasi
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              PT Indonesia Tekhnosindo Semesta | Bintang Renovasi
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
