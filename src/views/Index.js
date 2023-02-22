@@ -1,3 +1,4 @@
+import Service from 'components/Cards/Service.js';
 import DarkFooter from 'components/Footers/DarkFooter.js';
 import IndexHeader from 'components/Headers/IndexHeader.js';
 // reactstrap components
@@ -6,7 +7,7 @@ import IndexHeader from 'components/Headers/IndexHeader.js';
 // core components
 import IndexNavbar from 'components/Navbars/IndexNavbar.js';
 import React from 'react';
-import { Col, Container, Row } from 'reactstrap';
+import { Button, Col, Container, Row } from 'reactstrap';
 
 // sections for this page
 import Images from './index-sections/Images.js';
@@ -23,6 +24,27 @@ function Index() {
       document.body.classList.remove('sidebar-collapse');
     };
   });
+
+  const servicesList = [
+    {
+      id: 1,
+      title: 'Exterior',
+      image: require('assets/img/exterior-square-1.jpeg'),
+      description: 'Exterior renovation'
+    },
+    {
+      id: 2,
+      title: 'Exterior',
+      image: require('assets/img/exterior-square-2.jpeg'),
+      description: 'Exterior renovation'
+    },
+    {
+      id: 3,
+      title: 'Interior',
+      image: require('assets/img/interior-square-1.jpeg'),
+      description: 'Exterior renovation'
+    }
+  ];
   return (
     <>
       <IndexNavbar />
@@ -31,7 +53,7 @@ function Index() {
         <div className="main">
           <Images />
           <div
-            className="section section-about-us"
+            className="section-about-us"
             style={{ marginTop: '-25vh', backgroundColor: 'transparent' }}>
             <Container>
               <Row>
@@ -43,6 +65,63 @@ function Index() {
                     year down to low ice extent in the Pacific and a late drop in ice extent in the
                     Barents Sea.
                   </h4>
+                </Col>
+              </Row>
+              <div className="section-story-overview">
+                <Row>
+                  <Col md="6">
+                    <div
+                      className="image-container image-left"
+                      style={{
+                        backgroundImage: 'url(' + require('assets/img/home-renovation-1.jpg') + ')'
+                      }}></div>
+                  </Col>
+                  <Col md="5">
+                    <div
+                      className="image-container image-right"
+                      style={{
+                        backgroundImage: 'url(' + require('assets/img/home-renovation-2.jpeg') + ')'
+                      }}></div>
+                  </Col>
+                </Row>
+              </div>
+            </Container>
+          </div>
+          <div className="section section-team text-center">
+            <Container>
+              <h2 className="title">Here is our services</h2>
+              <div className="team">
+                <Row>
+                  {servicesList.map((data) => (
+                    <Col md="4" key={data.id}>
+                      <Service
+                        title={data.title}
+                        image={data.image}
+                        description={data.description}
+                      />
+                    </Col>
+                  ))}
+                </Row>
+              </div>
+            </Container>
+          </div>
+          <div className="section-contact-us text-center" style={{ paddingBottom: 70 }}>
+            <Container>
+              <h2 className="title">Want to work with us?</h2>
+              <p className="description">Your project is very important to us.</p>
+              <Row>
+                <Col className="text-center ml-auto mr-auto" lg="6" md="8">
+                  <div className="send-button">
+                    <Button
+                      block
+                      className="btn-round"
+                      color="info"
+                      href="#whatsapp"
+                      onClick={(e) => e.preventDefault()}
+                      size="lg">
+                      Contact Us
+                    </Button>
+                  </div>
                 </Col>
               </Row>
             </Container>
