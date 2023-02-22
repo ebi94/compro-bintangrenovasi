@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4749f034.css",
-    "main.js": "/static/js/main.69c0d8f4.js",
+    "main.js": "/static/js/main.2edff962.js",
     "static/media/house-design-hd.png": "/static/media/house-design-hd.f26ae7a8a9cdbd8f9197.png",
     "static/media/wall-renovation.jpeg": "/static/media/wall-renovation.a5aa42d43c078e11fb7e.jpeg",
     "static/media/bg6.jpg": "/static/media/bg6.dc603b7416966b84ac68.jpg",
@@ -31,10 +31,10 @@
     "static/media/nucleo-outline.woff2": "/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "index.html": "/index.html",
     "main.4749f034.css.map": "/static/css/main.4749f034.css.map",
-    "main.69c0d8f4.js.map": "/static/js/main.69c0d8f4.js.map"
+    "main.2edff962.js.map": "/static/js/main.2edff962.js.map"
   },
   "entrypoints": [
     "static/css/main.4749f034.css",
-    "static/js/main.69c0d8f4.js"
+    "static/js/main.2edff962.js"
   ]
 }
