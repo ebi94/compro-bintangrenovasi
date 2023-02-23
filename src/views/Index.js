@@ -87,6 +87,46 @@ function Index() {
               </div>
             </Container>
           </div>
+          <div className="section section-nucleo-icons">
+            <Container>
+              <Row>
+                <Col lg="6" md="12">
+                  <h2 className="title">Our Visi</h2>
+                  <h5 className="description">
+                    Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The
+                    official package contains over 2.100 thin icons which are looking great in
+                    combination with Now UI Kit PRO Make sure you check all of them and use those
+                    that you like the most.
+                  </h5>
+                </Col>
+                <Col lg="6" md="12">
+                  <div className="icons-container">
+                    <img alt="..." className="rounded" src={require('assets/img/julie.jpg')}></img>
+                  </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+          <div className="section section-nucleo-icons">
+            <Container>
+              <Row>
+                <Col lg="6" md="12">
+                  <div className="icons-container">
+                    <img alt="..." className="rounded" src={require('assets/img/julie.jpg')}></img>
+                  </div>
+                </Col>
+                <Col lg="6" md="12" style={{ textAlign: 'end' }}>
+                  <h2 className="title">Our Misi</h2>
+                  <h5 className="description">
+                    Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The
+                    official package contains over 2.100 thin icons which are looking great in
+                    combination with Now UI Kit PRO Make sure you check all of them and use those
+                    that you like the most.
+                  </h5>
+                </Col>
+              </Row>
+            </Container>
+          </div>
           <div className="section section-team text-center">
             <Container>
               <h2 className="title">Here is our services</h2>
