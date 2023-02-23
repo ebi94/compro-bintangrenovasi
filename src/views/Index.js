@@ -29,7 +29,7 @@ function Index() {
     {
       id: 1,
       title: 'Exterior',
-      image: require('assets/img/exterior-square-1.jpeg'),
+      image: require('assets/img/interior-square-2.jpeg'),
       description: 'Exterior renovation'
     },
     {
@@ -101,7 +101,10 @@ function Index() {
                 </Col>
                 <Col lg="6" md="12">
                   <div className="icons-container">
-                    <img alt="..." className="rounded" src={require('assets/img/julie.jpg')}></img>
+                    <img
+                      alt="..."
+                      className="rounded"
+                      src={require('assets/img/rumah-minimalis-1.png')}></img>
                   </div>
                 </Col>
               </Row>
@@ -112,7 +115,10 @@ function Index() {
               <Row>
                 <Col lg="6" md="12">
                   <div className="icons-container">
-                    <img alt="..." className="rounded" src={require('assets/img/julie.jpg')}></img>
+                    <img
+                      alt="..."
+                      className="rounded"
+                      src={require('assets/img/rumah-minimalis-1.png')}></img>
                   </div>
                 </Col>
                 <Col lg="6" md="12" style={{ textAlign: 'end' }}>

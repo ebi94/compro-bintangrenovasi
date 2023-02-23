@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.4749f034.css",
-    "main.js": "/static/js/main.3e9977d2.js",
+    "main.js": "/static/js/main.9f745fe2.js",
     "static/media/house-design-hd.png": "/static/media/house-design-hd.f26ae7a8a9cdbd8f9197.png",
     "static/media/wall-renovation.jpeg": "/static/media/wall-renovation.a5aa42d43c078e11fb7e.jpeg",
     "static/media/bg6.jpg": "/static/media/bg6.dc603b7416966b84ac68.jpg",
     "static/media/bg1.jpg": "/static/media/bg1.71a28027225b8ae945bb.jpg",
     "static/media/bg11.jpg": "/static/media/bg11.c6c21bd88aee67067eb6.jpg",
-    "static/media/exterior-square-1.jpeg": "/static/media/exterior-square-1.0bc6aedcf295c396f18b.jpeg",
     "static/media/bg4.jpg": "/static/media/bg4.01ad1068585185f35555.jpg",
     "static/media/interior-square-1.jpeg": "/static/media/interior-square-1.7ebb0ef2a9deec2a7fa8.jpeg",
     "static/media/bg3.jpg": "/static/media/bg3.850b808854f295b2c596.jpg",
+    "static/media/rumah-minimalis-1.png": "/static/media/rumah-minimalis-1.2fe072d1aaf8978cb481.png",
     "static/media/login.jpg": "/static/media/login.ab931d77bfe905914456.jpg",
     "static/media/exterior-square-2.jpeg": "/static/media/exterior-square-2.ec9b2577f09796cde877.jpeg",
+    "static/media/interior-square-2.jpeg": "/static/media/interior-square-2.60e2b8bbb77b6866416d.jpeg",
     "static/media/bg7.jpg": "/static/media/bg7.6249276d677cd6fd680e.jpg",
     "static/media/bg5.jpg": "/static/media/bg5.d60a95eb31d6400f802f.jpg",
     "static/media/bg8.jpg": "/static/media/bg8.2c89438b189a2a391f19.jpg",
@@ -31,10 +32,10 @@
     "static/media/nucleo-outline.woff2": "/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "index.html": "/index.html",
     "main.4749f034.css.map": "/static/css/main.4749f034.css.map",
-    "main.3e9977d2.js.map": "/static/js/main.3e9977d2.js.map"
+    "main.9f745fe2.js.map": "/static/js/main.9f745fe2.js.map"
   },
   "entrypoints": [
     "static/css/main.4749f034.css",
-    "static/js/main.3e9977d2.js"
+    "static/js/main.9f745fe2.js"
   ]
 }
