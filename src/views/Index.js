@@ -28,23 +28,64 @@ function Index() {
   const servicesList = [
     {
       id: 1,
-      title: 'Exterior',
+      title: 'Renovasi',
       image: require('assets/img/interior-square-2.jpeg'),
-      description: 'Exterior renovation'
+      description: 'Renovasi rumah,toko, gedung dll'
     },
     {
       id: 2,
-      title: 'Exterior',
+      title: 'Cat Exterior & Interior',
       image: require('assets/img/exterior-square-2.jpeg'),
-      description: 'Exterior renovation'
+      description: 'Pengecetan Interior dan Exterior'
     },
     {
       id: 3,
-      title: 'Interior',
+      title: 'Design',
       image: require('assets/img/interior-square-1.jpeg'),
-      description: 'Exterior renovation'
+      description: 'Design Interior'
     }
   ];
+
+  const teamList = [
+    {
+      id: 1,
+      title: 'Ivan Anthony',
+      image: require('assets/img/ivan.png'),
+      description: 'Direktur Utama'
+    },
+    {
+      id: 2,
+      title: 'Dzaki Arrahman',
+      image: require('assets/img/dzaki.png'),
+      description: 'Direktur Operasional'
+    },
+    {
+      id: 3,
+      title: 'Rayyan Muhammad Ra`uf Juliansyah',
+      image: require('assets/img/rayyan.png'),
+      description: 'Estimator Manager'
+    }
+  ];
+
+  const whyList = [
+    {
+      id: 1,
+      title: 'Team yang berpengalaman dengan lulusan Arsitek',
+      image: require('assets/img/interior-square-2.jpeg')
+    },
+    {
+      id: 2,
+      title: 'Team Anak Muda dengan Kreatifitas tinggi',
+      image: require('assets/img/exterior-square-2.jpeg')
+    },
+    {
+      id: 3,
+      title:
+        'Tukang yang berpengalaman dalam pembangunan dan pengawas agar sesuai dengan time line kerja',
+      image: require('assets/img/interior-square-1.jpeg')
+    }
+  ];
+
   return (
     <>
       <IndexNavbar />
@@ -60,10 +101,9 @@ function Index() {
                 <Col className="ml-auto mr-auto text-center" md="8">
                   <h2 className="title">Who we are?</h2>
                   <h4 className="description">
-                    According to the National Oceanic and Atmospheric Administration, Ted, Scambos,
-                    NSIDClead scentist, puts the potentially record low maximum sea ice extent tihs
-                    year down to low ice extent in the Pacific and a late drop in ice extent in the
-                    Barents Sea.
+                    Kami dari Bintang Renovasi yang bergerak dibidang Renovasi rumah, toko, gedung
+                    dan bangunan lainya yang mengusung konsep mudah dan bisa disesuaikan dengan
+                    kemampuan dari pemilik dengan bentuk atau gambar rumah sesuai keinginan.
                   </h4>
                 </Col>
               </Row>
@@ -87,16 +127,19 @@ function Index() {
               </div>
             </Container>
           </div>
-          <div className="section section-nucleo-icons">
+          <div className="section-nucleo-icons">
             <Container>
               <Row>
                 <Col lg="6" md="12">
                   <h2 className="title">Our Visi</h2>
                   <h5 className="description">
-                    Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The
-                    official package contains over 2.100 thin icons which are looking great in
-                    combination with Now UI Kit PRO Make sure you check all of them and use those
-                    that you like the most.
+                    <ul>
+                      <li>
+                        Visi kami menjadi bidang usaha yang dibutuhkan oleh seluruh masyarakat
+                        Indonesia
+                      </li>
+                      <li>Visi Kami Mampu Bersaing di dalam usaha renovasi</li>
+                    </ul>
                   </h5>
                 </Col>
                 <Col lg="6" md="12">
@@ -110,7 +153,7 @@ function Index() {
               </Row>
             </Container>
           </div>
-          <div className="section section-nucleo-icons">
+          <div className="section-nucleo-icons">
             <Container>
               <Row>
                 <Col lg="6" md="12">
@@ -124,13 +167,55 @@ function Index() {
                 <Col lg="6" md="12" style={{ textAlign: 'end' }}>
                   <h2 className="title">Our Misi</h2>
                   <h5 className="description">
-                    Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The
-                    official package contains over 2.100 thin icons which are looking great in
-                    combination with Now UI Kit PRO Make sure you check all of them and use those
-                    that you like the most.
+                    <ul>
+                      <li>
+                        Misi kami menjawab kebutuhan pelanggan dalam me rubah dan memperbaiki
+                        bangunan sesuai dengan kemampuan
+                      </li>
+                      <li>
+                        Misi kami menjaga Amanah dan Jujur dalam menjalankan usaha untuk memuaskan
+                        para pelanggan kami.
+                      </li>
+                    </ul>
                   </h5>
                 </Col>
               </Row>
+            </Container>
+          </div>
+          <div className="section-team text-center">
+            <Container>
+              <h2 className="title">Our team</h2>
+              <div className="team">
+                <Row>
+                  {teamList.map((data) => (
+                    <Col md="4" key={data.id}>
+                      <Service
+                        title={data.title}
+                        image={data.image}
+                        description={data.description}
+                      />
+                    </Col>
+                  ))}
+                </Row>
+              </div>
+            </Container>
+          </div>
+          <div className="section-team text-center">
+            <Container>
+              <h2 className="title">Why us ?</h2>
+              <div className="team">
+                <Row>
+                  {whyList.map((data) => (
+                    <Col md="4" key={data.id}>
+                      <Service
+                        title={data.title}
+                        image={data.image}
+                        description={data.description}
+                      />
+                    </Col>
+                  ))}
+                </Row>
+              </div>
             </Container>
           </div>
           <div className="section section-team text-center">

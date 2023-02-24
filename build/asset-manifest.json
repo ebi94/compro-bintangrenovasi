@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.4749f034.css",
-    "main.js": "/static/js/main.9f745fe2.js",
+    "main.js": "/static/js/main.357aeac3.js",
     "static/media/house-design-hd.png": "/static/media/house-design-hd.f26ae7a8a9cdbd8f9197.png",
+    "static/media/rayyan.png": "/static/media/rayyan.ef6c341d88fadc7cdd0d.png",
     "static/media/wall-renovation.jpeg": "/static/media/wall-renovation.a5aa42d43c078e11fb7e.jpeg",
     "static/media/bg6.jpg": "/static/media/bg6.dc603b7416966b84ac68.jpg",
+    "static/media/dzaki.png": "/static/media/dzaki.d6c6c75f99aa5c101dd3.png",
+    "static/media/ivan.png": "/static/media/ivan.d6ccf48a99ad5fcd4726.png",
     "static/media/bg1.jpg": "/static/media/bg1.71a28027225b8ae945bb.jpg",
     "static/media/bg11.jpg": "/static/media/bg11.c6c21bd88aee67067eb6.jpg",
     "static/media/bg4.jpg": "/static/media/bg4.01ad1068585185f35555.jpg",
@@ -32,10 +35,10 @@
     "static/media/nucleo-outline.woff2": "/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "index.html": "/index.html",
     "main.4749f034.css.map": "/static/css/main.4749f034.css.map",
-    "main.9f745fe2.js.map": "/static/js/main.9f745fe2.js.map"
+    "main.357aeac3.js.map": "/static/js/main.357aeac3.js.map"
   },
   "entrypoints": [
     "static/css/main.4749f034.css",
-    "static/js/main.9f745fe2.js"
+    "static/js/main.357aeac3.js"
   ]
 }
