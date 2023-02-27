@@ -1,3 +1,4 @@
+import Partner from 'components/Cards/Partner.js';
 import Service from 'components/Cards/Service.js';
 import DarkFooter from 'components/Footers/DarkFooter.js';
 import IndexHeader from 'components/Headers/IndexHeader.js';
@@ -29,7 +30,7 @@ function Index() {
     {
       id: 1,
       title: 'Renovasi',
-      image: require('assets/img/interior-square-2.jpeg'),
+      image: require('assets/img/home-renovation-3.jpeg'),
       description: 'Renovasi rumah,toko, gedung dll'
     },
     {
@@ -86,17 +87,32 @@ function Index() {
     }
   ];
 
+  const partnerList = [
+    {
+      id: 1,
+      image: require('assets/img/ivoosmart.png')
+    },
+    {
+      id: 2,
+      image: require('assets/img/kenari.png')
+    },
+    {
+      id: 3,
+      image: require('assets/img/nippon.png')
+    }
+  ];
+
   return (
     <>
       <IndexNavbar />
-      <div className="wrapper">
+      <div className="wrapper" id="top">
         <IndexHeader />
         <div className="main">
           <Images />
           <div
             className="section-about-us"
             style={{ marginTop: '-25vh', backgroundColor: 'transparent' }}>
-            <Container>
+            <Container id="about-us">
               <Row>
                 <Col className="ml-auto mr-auto text-center" md="8">
                   <h2 className="title">Who we are?</h2>
@@ -161,7 +177,7 @@ function Index() {
                     <img
                       alt="..."
                       className="rounded"
-                      src={require('assets/img/rumah-minimalis-1.png')}></img>
+                      src={require('assets/img/rumah-minimalis-3.png')}></img>
                   </div>
                 </Col>
                 <Col lg="6" md="12" style={{ textAlign: 'end' }}>
@@ -183,7 +199,7 @@ function Index() {
             </Container>
           </div>
           <div className="section-team text-center">
-            <Container>
+            <Container id="our-team">
               <h2 className="title">Our team</h2>
               <div className="team">
                 <Row>
@@ -219,7 +235,7 @@ function Index() {
             </Container>
           </div>
           <div className="section section-team text-center">
-            <Container>
+            <Container id="our-service">
               <h2 className="title">Here is our services</h2>
               <div className="team">
                 <Row>
@@ -230,6 +246,20 @@ function Index() {
                         image={data.image}
                         description={data.description}
                       />
+                    </Col>
+                  ))}
+                </Row>
+              </div>
+            </Container>
+          </div>
+          <div className="section section-team text-center">
+            <Container id="our-partner">
+              <h2 className="title">Our Partner</h2>
+              <div className="team">
+                <Row>
+                  {partnerList.map((data) => (
+                    <Col md="4" key={data.id}>
+                      <Partner image={data.image} marginTop={+data.id === 2 ? '22%' : 0} />
                     </Col>
                   ))}
                 </Row>
@@ -253,6 +283,29 @@ function Index() {
                       Contact Us
                     </Button>
                   </div>
+                </Col>
+              </Row>
+            </Container>
+          </div>
+          <div className="section-contact-us text-center" style={{ paddingBottom: 70 }}>
+            <Container id="contact">
+              <h2 className="title">Our Office</h2>
+              <Row>
+                <Col lg="6" md="12">
+                  <div className="icons-container">
+                    <img
+                      alt="PT INDONESIA TEKHNOSINDO SEMESTA"
+                      className="rounded"
+                      src={require('assets/img/logo-text.png')}></img>
+                  </div>
+                </Col>
+                <Col lg="6" md="12">
+                  <h4 className="title">Alamat</h4>
+                  <h5 className="description">
+                    JL.Pada Suka Ideal Residance Cluster Euporbia BLO - Bandung
+                  </h5>
+                  <h4 className="title">Nomor Telepon</h4>
+                  <h5 className="description">0821-2731-2968</h5>
                 </Col>
               </Row>
             </Container>
