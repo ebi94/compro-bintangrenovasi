@@ -43,9 +43,12 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
-              target="_blank"
-              id="navbar-brand">
+              href="/"
+              id="navbar-brand"
+              onClick={(e) => {
+                e.preventDefault();
+                document.getElementById('top').scrollIntoView({ behavior: 'smooth', top: 'start' });
+              }}>
               Bintang Renovasi
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
@@ -68,30 +71,48 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#about-us"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('download-section').scrollIntoView();
+                    document
+                      .getElementById('about-us')
+                      .scrollIntoView({ behavior: 'smooth', block: 'end' });
                   }}>
                   <p>About Us</p>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#our-service"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('download-section').scrollIntoView();
+                    document
+                      .getElementById('our-service')
+                      .scrollIntoView({ behavior: 'smooth', block: 'end' });
                   }}>
                   <p>Our Services</p>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="#pablo"
+                  href="#our-team"
                   onClick={(e) => {
                     e.preventDefault();
-                    document.getElementById('download-section').scrollIntoView();
+                    document
+                      .getElementById('our-team')
+                      .scrollIntoView({ behavior: 'smooth', block: 'end' });
+                  }}>
+                  <p>Our Team</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href="#our-partner"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById('our-partner')
+                      .scrollIntoView({ behavior: 'smooth', block: 'end' });
                   }}>
                   <p>Our Partner</p>
                 </NavLink>
@@ -100,15 +121,19 @@ function IndexNavbar() {
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-navbar"
-                  id="upgrade-to-pro"
-                  target="_blank">
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .getElementById('contact')
+                      .scrollIntoView({ behavior: 'smooth', block: 'end' });
+                  }}>
                   <p>Contact Us</p>
                 </Button>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                  href="https://twitter.com/bintangrenovasi"
                   target="_blank"
                   id="twitter-tooltip">
                   <i className="fab fa-twitter"></i>
@@ -120,7 +145,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.facebook.com/bintangrenovasi"
                   target="_blank"
                   id="facebook-tooltip">
                   <i className="fab fa-facebook-square"></i>
@@ -132,7 +157,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://www.instagram.com/bintangrenovasi"
                   target="_blank"
                   id="instagram-tooltip">
                   <i className="fab fa-instagram"></i>

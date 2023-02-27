@@ -1,10 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.4749f034.css",
-    "main.js": "/static/js/main.9f745fe2.js",
+    "main.js": "/static/js/main.1f0d01b9.js",
     "static/media/house-design-hd.png": "/static/media/house-design-hd.f26ae7a8a9cdbd8f9197.png",
+    "static/media/rayyan.png": "/static/media/rayyan.ef6c341d88fadc7cdd0d.png",
     "static/media/wall-renovation.jpeg": "/static/media/wall-renovation.a5aa42d43c078e11fb7e.jpeg",
     "static/media/bg6.jpg": "/static/media/bg6.dc603b7416966b84ac68.jpg",
+    "static/media/dzaki.png": "/static/media/dzaki.d6c6c75f99aa5c101dd3.png",
+    "static/media/ivan.png": "/static/media/ivan.d6ccf48a99ad5fcd4726.png",
     "static/media/bg1.jpg": "/static/media/bg1.71a28027225b8ae945bb.jpg",
     "static/media/bg11.jpg": "/static/media/bg11.c6c21bd88aee67067eb6.jpg",
     "static/media/bg4.jpg": "/static/media/bg4.01ad1068585185f35555.jpg",
@@ -14,6 +17,7 @@
     "static/media/login.jpg": "/static/media/login.ab931d77bfe905914456.jpg",
     "static/media/exterior-square-2.jpeg": "/static/media/exterior-square-2.ec9b2577f09796cde877.jpeg",
     "static/media/interior-square-2.jpeg": "/static/media/interior-square-2.60e2b8bbb77b6866416d.jpeg",
+    "static/media/rumah-minimalis-3.png": "/static/media/rumah-minimalis-3.81c68e09fa062c7af796.png",
     "static/media/bg7.jpg": "/static/media/bg7.6249276d677cd6fd680e.jpg",
     "static/media/bg5.jpg": "/static/media/bg5.d60a95eb31d6400f802f.jpg",
     "static/media/bg8.jpg": "/static/media/bg8.2c89438b189a2a391f19.jpg",
@@ -24,18 +28,22 @@
     "static/media/ryan.jpg": "/static/media/ryan.ca24473bc1e6d20bf0d1.jpg",
     "static/media/julie.jpg": "/static/media/julie.00733edf41a7831227f2.jpg",
     "static/media/home-renovation-2.jpeg": "/static/media/home-renovation-2.29770390381ca711cfec.jpeg",
+    "static/media/logo-text.png": "/static/media/logo-text.3a3a5ed2acabe19ae4d6.png",
+    "static/media/ivoosmart.png": "/static/media/ivoosmart.ae70812fd4a901951098.png",
+    "static/media/kenari.png": "/static/media/kenari.d79b4c5143a44ceb8629.png",
     "static/media/logo-transparent.png": "/static/media/logo-transparent.f74d99ddbecd395f25ea.png",
     "static/media/avatar.jpg": "/static/media/avatar.21d108f80102dc685d9b.jpg",
+    "static/media/home-renovation-3.jpeg": "/static/media/home-renovation-3.1fc02bbfedd0b1dfaeea.jpeg",
     "static/media/nucleo-outline.eot": "/static/media/nucleo-outline.56814a6b7240045e1494.eot",
     "static/media/nucleo-outline.ttf": "/static/media/nucleo-outline.1102ed9b2d16dccdec05.ttf",
     "static/media/nucleo-outline.woff": "/static/media/nucleo-outline.1a1036e643f97457ec5f.woff",
     "static/media/nucleo-outline.woff2": "/static/media/nucleo-outline.802141dd0dcc63b21cbb.woff2",
     "index.html": "/index.html",
     "main.4749f034.css.map": "/static/css/main.4749f034.css.map",
-    "main.9f745fe2.js.map": "/static/js/main.9f745fe2.js.map"
+    "main.1f0d01b9.js.map": "/static/js/main.1f0d01b9.js.map"
   },
   "entrypoints": [
     "static/css/main.4749f034.css",
-    "static/js/main.9f745fe2.js"
+    "static/js/main.1f0d01b9.js"
   ]
 }
